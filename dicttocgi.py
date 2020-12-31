@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-"""Turn a json dictionary (object) into a cgi query string"""
+"""Turn a stringified python dictionary into a cgi query string"""
 import sys
-import json
+from ast import literal_eval
 from urllib.parse import quote
 
 if __name__ == '__main__':
-    myj = json.loads(sys.argv[1])
+    myj = literal_eval(sys.argv[1])
     print('&'.join([quote(key) + '=' + quote(myj[key]) for key in myj]))
