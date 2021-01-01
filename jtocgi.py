@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Turn a json dictionary (object) into a cgi query string"""
+# comment
 import sys
 import json
 from urllib.parse import quote
