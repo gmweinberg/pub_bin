@@ -12,8 +12,10 @@ if __name__ == '__main__':
     target = sys.argv[1]
     path = pathlib.Path(target)
     print('target dir name', path.name)
-    # os.mkdir(path.name)
-    for afile in listdir(target):
+    os.mkdir(path.name)
+    files = list(listdir(target))
+    files.sort()
+    for afile in files:
         srcfile = target + '/' + afile
         destfile = str(current) + '/' + str(path.name) + '/' + afile
         print(srcfile, destfile)
