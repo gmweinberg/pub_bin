@@ -3,7 +3,7 @@
 the same name and copy all files into the new directory."""
 # I find this uis necessary to get my car stereo to play files off a usb stick in the correct order
 import sys, time
-from os import listdir
+from os import listdir, mkdir
 import pathlib
 
 if __name__ == '__main__':
@@ -12,7 +12,7 @@ if __name__ == '__main__':
     target = sys.argv[1]
     path = pathlib.Path(target)
     print('target dir name', path.name)
-    os.mkdir(path.name)
+    mkdir(path.name)
     files = list(listdir(target))
     files.sort()
     for afile in files:
