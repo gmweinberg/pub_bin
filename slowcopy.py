@@ -5,6 +5,7 @@ the same name and copy all files into the new directory."""
 import sys, time
 from os import listdir, mkdir
 import pathlib
+from shutil import copyfile
 
 if __name__ == '__main__':
     current = pathlib.Path().absolute()
@@ -19,5 +20,6 @@ if __name__ == '__main__':
         srcfile = target + '/' + afile
         destfile = str(current) + '/' + str(path.name) + '/' + afile
         print(srcfile, destfile)
+        copyfile(srcfile, destfile)
         time.sleep(2)
     
