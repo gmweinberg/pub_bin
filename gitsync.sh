@@ -3,6 +3,8 @@
 #
 while read p; do
 		if [ -d "$p" ]; then
-		     echo "$p exists"
+		     cd "$p"
+			 pwd
+			 git pull
 		fi
 done <~/pub_include/.gitsync
