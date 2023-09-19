@@ -8,3 +8,5 @@ if __name__ == '__main__':
          match = re.search(pattern, line)
          if match:
              print(match.group(1))
+
+# cat sitemap.xml | grepgroup.py '<loc>([^<]+)'
