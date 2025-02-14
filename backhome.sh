@@ -16,4 +16,4 @@ rsync -a .ssh /run/media/gweinberg/82d81899-82c5-4b58-a367-5b9a844e3e3f/backup/
 rsync -a .bashrc /run/media/gweinberg/82d81899-82c5-4b58-a367-5b9a844e3e3f/backup/
 rsync -a .gitconfig /run/media/gweinberg/82d81899-82c5-4b58-a367-5b9a844e3e3f/backup/
 rsync -a aascratch /run/media/gweinberg/82d81899-82c5-4b58-a367-5b9a844e3e3f/backup/
-rsync -a bin/backhome.sh /run/media/gweinberg/82d81899-82c5-4b58-a367-5b9a844e3e3f/backup/bin
+rsync -a vcdata /run/media/gweinberg/82d81899-82c5-4b58-a367-5b9a844e3e3f/backup/
